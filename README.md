@@ -56,12 +56,12 @@ git, writing test cases and documenting performance against milestones
 | Sun 31st April | Group met via zoom | Get to know each other |
 | Tues 2nd May | Plan discussion | Install SFML on our devices so we are ready to start |
 | Wed 3rd May | ENGR101 Lecture | Jasmine asks any questions with Arthur |
-| Fri 5th May | Do core code | Writing core code and write test cases for core |
-| Sun 7th May | Check on core code | Gives time to test and debug code for next meeting |
-| Tues 9th May | Completion discussion | Finalise core code and start completion code and write test cases |
-| Fri 12th May | Check on completion code | Gives time to test and debug code for next meeting |
-| Sun 14th May | Challenge discussion | Finalise completion code and start challenge code and write test cases |
-| Tues 16th May | Update on challenge | Should be near the end of the coding progress |
+| Fri 5th May | Do core code | Writing core code and write Core test cases |
+| Sun 7th May | Check on core code | Gives time to test and debug code for next meeting. Finsihed Core test cases ready for code completion|
+| Tues 9th May | Completion discussion | Finalise core code and start completion code and write Completion test cases |
+| Fri 12th May | Check on completion code | Gives time to test and debug code for next meeting. Finsihed Completion test cases ready for code completion |
+| Sun 14th May | Challenge discussion | Finalise completion code and start challenge code and writing Challenge test cases |
+| Tues 16th May | Update on challenge | Should be near the end of the coding progress. Finished Challenge test cases|
 | Thur 18th May | Double check code | Make sure code works and is ready for hand-in the following day |
 | Fri 19th May | CODE DUE | Make sure code is submitted |
 | Fri 19th May | Report discussion | Discuss report with group and recap logs (team and individual) |
