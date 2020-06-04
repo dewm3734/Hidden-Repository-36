@@ -34,6 +34,19 @@ git, writing test cases and documenting performance against milestones
 | Individual Log | Wed 24th May  | 5% |
 | Group Log Report | Wed 24th May  | 5% |
 
+### Interferances to note
+| Conflicts | Due Date | 
+|----------|------|
+| ENGR101 Tutorial 4 | Mon 1st May |
+| ENGR 121 Assignment 6 | Wed 3rd May |
+| COMP Assignment 7/6+7 | Thurs 4th May |
+| ENGR 121 Lab 3 | Fri 5th May  |
+| CYBR 171 Assignment 2 | Mon 8th May  |
+| ENGR 121 Assignment 7| Wed 10th May  |
+| Comp Assignment 8 | Thrus 11th May  |
+| CYBR ENGR Test 2 | Wed 17th May  |
+| Comp Assignment 9/8+9 | Mon 18th May  |
+
 ### Timeline
 
 | Date | Agenda | What we want to accomplish |
