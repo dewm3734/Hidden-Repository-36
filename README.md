@@ -47,7 +47,12 @@ git, writing test cases and documenting performance against milestones
 | CYBR ENGR Test 2 | Wed 17th May  |
 | Comp Assignment 9/8+9 | Mon 18th May  |
 
+Note the large gap between the 11th and the 17th. This is where we should be getting a lot of work done and can be treated as both a catch up and a get ahead period for the project. Challenge code may be written in this time. If this happens challenge test case creation will have to be accerated and more minds put towards it.
+
+After report submission is Assignment 10 for Comp and Cybr Test 2. Because of this we may want to complete the parts sooner than scheduled. 
+
 ### Timeline
+Note this is a team timeline and the Invidvidual Report will have to be completed in your own time. This time is provided while finalising the Group report and logs between the Friday 19th and Wednesday 24th of May however should be worked on throughout by the individual. 
 
 | Date | Agenda | What we want to accomplish |
 |----------|------|-------------|
@@ -59,7 +64,7 @@ git, writing test cases and documenting performance against milestones
 | Fri 5th May | Do core code | Writing core code and write Core test cases |
 | Sun 7th May | Check on core code | Gives time to test and debug code for next meeting. Finsihed Core test cases ready for code completion|
 | Tues 9th May | Completion discussion | Finalise core code and start completion code and write Completion test cases |
-| Fri 12th May | Check on completion code | Gives time to test and debug code for next meeting. Finsihed Completion test cases ready for code completion |
+| Fri 12th May | Check on completion code | Gives time to test and debug code for next meeting. Finished Completion test cases ready for code completion |
 | Sun 14th May | Challenge discussion | Finalise completion code and start challenge code and writing Challenge test cases |
 | Tues 16th May | Update on challenge | Should be near the end of the coding progress. Finished Challenge test cases|
 | Thur 18th May | Double check code | Make sure code works and is ready for hand-in the following day |
