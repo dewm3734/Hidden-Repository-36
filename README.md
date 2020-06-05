@@ -16,7 +16,7 @@ Software Architect - writing core code and extending functionality
 - #### Michael Dewson - mikedwn123@gmail.com  
 Software Architect - writing core code and extending functionality
 
-- #### Deepika Mehta - raheja.deepika87@gmail.com  
+- #### Deepika Raheja - raheja.deepika87@gmail.com  
 Software writing, testing, and documentation - debugging software and committing to
 git, writing test cases and documenting performance against milestones
 
