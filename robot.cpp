@@ -17,7 +17,17 @@ double calculateOffset(){
 		offset += total_cols/2-col;
 	  }
 	}
-	return (double)offset/amount/total_cols;// divide by camera view to normalise.
+	return (double)offset/amount/total_cols*2;// divide by half the camera view to normalise.
+}
+double * calculateWheelSpeeds(double offset,double speed){
+	double lv=0;
+	double rv=0;
+	lv+=-offset*speed+speed;
+	rv+=offset*speed+speed;
+
+    double speeds[2] = { lv,rv }; 
+	return speeds;
+	
 }
 int main(){
 	if (initClientRobot() !=0){
@@ -25,11 +35,15 @@ int main(){
 	}
     double vLeft = 5.0;
     double vRight = 5.0;
+    double speed = 80.0;
     takePicture();
     SavePPMFile("i0.ppm",cameraView);
     while(1){
 	  takePicture();
 	  double offset = calculateOffset();
+	  double * speeds = calculateWheelSpeeds(offset, speed);
+	  vLeft = speeds[0];
+	  vRight = speeds[1];
       setMotors(vLeft,vRight);   
       std::cout<<" Offset="<<offset<<std::endl;
       std::cout<<" vLeft="<<vLeft<<"  vRight="<<vRight<<std::endl;
