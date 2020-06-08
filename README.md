@@ -90,4 +90,6 @@ We have been staying in contact with each other on FB messenger and sending phot
 ### Friday 5th May - Zoom call
 Today we started to brainstorm ideas on how we want to approach core. We looked through Arthur's slides and discussed ideas of what we wanted to do. We decided to go for the approach by asking ourselves the question of how far from the centre of the image the white line is? This is simply done by detecting the white pixel in the camera and then adjusting the robot by calculating the offset, speed, and even a reverse if the robot goes off track and we want it to find the white line again. We have a number of functions that we are going to implement and we have an idea of the kind of test cases that we will encounter. In this meeting, we also discovered that we still had a few issues with installing the SFML library on a few of our laptops which we need to sort out ASAP so we can move ahead with writing our code. We were deciding between whether we write a function each to try distribute the roles evenly and then try join it together, however, because some functions connect with each other, we believe that it may be best if two of our members write the code, and then the rest of us are in charge of debugging and experimenting with our test cases to get the best outcome we want. 
 
+### Monday 8th June - Gitcomit Test
+
 ## Test cases - Core
