@@ -93,3 +93,5 @@ Today we started to brainstorm ideas on how we want to approach core. We looked 
 ### Monday 8th June - Gitcomit Test
 
 ## Test cases - Core
+
+### Tuesday 9th June - Test
