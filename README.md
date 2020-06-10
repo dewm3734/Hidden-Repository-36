@@ -90,7 +90,12 @@ We have been staying in contact with each other on FB messenger and sending phot
 ### Friday 5th May - Zoom call
 Today we started to brainstorm ideas on how we want to approach core. We looked through Arthur's slides and discussed ideas of what we wanted to do. We decided to go for the approach by asking ourselves the question of how far from the centre of the image the white line is? This is simply done by detecting the white pixel in the camera and then adjusting the robot by calculating the offset, speed, and even a reverse if the robot goes off track and we want it to find the white line again. We have a number of functions that we are going to implement and we have an idea of the kind of test cases that we will encounter. In this meeting, we also discovered that we still had a few issues with installing the SFML library on a few of our laptops which we need to sort out ASAP so we can move ahead with writing our code. We were deciding between whether we write a function each to try distribute the roles evenly and then try join it together, however, because some functions connect with each other, we believe that it may be best if two of our members write the code, and then the rest of us are in charge of debugging and experimenting with our test cases to get the best outcome we want. 
 
-### Monday 8th June - Gitcomit Test
+### Tuesday 9th May - Zoom call
+Josh successfully coded the core over the weekend which is really exciting! He created 2 methods; calculating Offset and calculating Wheel Speeds. We were also able to detect the white line by using get_pixel. Although our core code works, we are going to further explore possible options on how the robot can detect the white line if for any reason, it were to go off track. Today we finally got all the SFML libraries succesfully installed so we do not have to worry about it anymore. This means we can now all make a start on exploring test cases. Even though Josh has coded the core code already, it is safe to assume that the test cases for core would be somewhat similar to the test cases for completion. Therefore, as the core code can further be improved, our aim this week is for us all to come up with a test case which we will work through at our next meeting. Once we have done this, we will move onto completion. Possible test cases for core include :
+
+- How well does the robot follow the white line? Is it constantly correcting itself?
+- Velocity of the robot. Determining how fast the robot turns a corner, and how the the robot maintains the speed.
+- What happens when the robot turns a corner? How well is it at correcting itself onto the white line? or staying on the white line?
 
 ## Test cases - Core
 
