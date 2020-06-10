@@ -73,7 +73,7 @@ Note this is a team timeline and the Invidvidual Report will have to be complete
 | Tues 23rd May | Finalise report | Check that report is done and logs are finished |
 | Wed 24th May | REPORT DUE | Make sure all report and logs are submitted - PROJECT DONE! |
 
-## Project Log - WIKI
+## Project Log - Wiki
 
 ## Test cases - Core
 
