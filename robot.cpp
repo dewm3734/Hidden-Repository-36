@@ -20,6 +20,7 @@ double calculateOffset(){
 	return (double)offset/amount/total_cols*2;// divide by half the camera view to normalise.
 }
 double * calculateWheelSpeeds(double offset,double speed){
+	/// Calclates the speed of each wheel
 	double lv=0;
 	double rv=0;
 	lv+=-offset*speed+speed;
@@ -35,13 +36,13 @@ int main(){
 	}
     double vLeft = 5.0;
     double vRight = 5.0;
-    double speed = 80.0;
+    double speed = 80.0; //robot speed
     takePicture();
     SavePPMFile("i0.ppm",cameraView);
     while(1){
 	  takePicture();
-	  double offset = calculateOffset();
-	  double * speeds = calculateWheelSpeeds(offset, speed);
+	  double offset = calculateOffset(); //get offset
+	  double * speeds = calculateWheelSpeeds(offset, speed);//get wheel speed
 	  vLeft = speeds[0];
 	  vRight = speeds[1];
       setMotors(vLeft,vRight);   
