@@ -1,7 +1,5 @@
 #include "robot.hpp"
-#include "LinePos.hpp"
 #include "Speeds.hpp"
-#include "Intercection.hpp"
 #define _USE_MATH_DEFINES
  
 #include <cmath>
