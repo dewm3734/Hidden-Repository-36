@@ -106,9 +106,9 @@ Watch the robot do it's thing
 | ENGR 121 Lab 3 | Fri 5th May  |
 | CYBR 171 Assignment 2 | Mon 8th May  |
 | ENGR 121 Assignment 7| Wed 10th May  |
-| Comp Assignment 8 | Thrus 11th May  |
+| COMP Assignment 8 | Thrus 11th May  |
 | CYBR ENGR Test 2 | Wed 17th May  |
-| Comp Assignment 9/8+9 | Mon 18th May  |
+| COMP Assignment 9/8+9 | Thurs 18th May  |
 
 Note the large gap between the 11th and the 17th. This is where we should be getting a lot of work done and can be treated as both a catch up and a get ahead period for the project. Challenge code may be written in this time. If this happens challenge test case creation will have to be accerated and more minds put towards it.
 
