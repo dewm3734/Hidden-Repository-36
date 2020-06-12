@@ -24,6 +24,69 @@ git, writing test cases and documenting performance against milestones
 Software writing, testing, and documentation - debugging software and committing to
 git, writing test cases and documenting performance against milestones
 
+
+### Installation
+Installing SFML on OSX
+
+The first step is to install home brew. To Install home-brew there are a few methods. The first is via terminal. There are two ways you can find the terminal.
+1) Command(⌘) + spacebar(⎵) can be used to open spotlight search. This will be a search bar appearing in the centre of you screen. Type "terminal" in it. Click the first thing
+
+Image
+
+2) The terminal can also be found in /Applications/Utilities/ folder. 
+
+3) Terminal is possible to be found by opening the launchpad found on the Mac quick bar at the bottom of your desktop.
+
+Image
+
+After opening terminal paste the following command into a single terminal line and press enter(return)
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" 
+```
+You’ll see a series of lines about what the script will install and where, hit Return again to agree or hit Escape to cancel.
+
+After agreeing, enter the administrator password (required by sudo execution) to begin installation
+
+After installing homebrew you are ready to install sfml
+Type the following command into a single line of the terminal and press enter
+```
+brew install sfml
+```
+
+After installing sfml, you can install this project from GitHub. Go to the top of the home page of the repository and click the green button on the right that says "Clone or download". Then click download zip.
+
+Image
+
+On Mac simply double clicking the zip file will extract it. You can then save the extracted folder wherever you want.
+
+On Mac open the file and open the AVC_Mac folder and then the AVC_robot file. Then open robot.cpp in Geany. Don't close this folder because you will need it later.
+
+Go to build -> set build commands
+Under the header "cpp commands" click the box beside "build" 
+
+Image
+
+Paste the following flags (text) at the end of the flags (text) that is already there.
+
+```
+-lsfml-graphics -lsfml-window -lsfml-system -lsfml-network
+```
+
+ The new command should look something like:
+```
+g++ -Wall -o "%e" "%f" -lsfml-graphics -lsfml-window -lsfml-system -lsfml-network 
+```
+
+Open go back into the folder where you were before and open server3.cpp in Geany 
+
+On Mac press **fn+f8**, **fn+f9**, **fn+f5**
+A terminal should open don't close it
+
+Reopen the robot.cpp file.
+On Mac press **fn+f8**, **fn+f9**, **fn+f5**
+
+Watch the robot do it's thing
+
 ### Deadlines to note
 
 | Hand-ins | Date | Course mark |
