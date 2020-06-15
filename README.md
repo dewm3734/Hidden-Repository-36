@@ -100,15 +100,15 @@ Watch the robot do it's thing
 ### Interferances to note
 | Conflicts | Due Date | 
 |----------|------|
-| ENGR101 Tutorial 4 | Mon 1st May |
-| ENGR 121 Assignment 6 | Wed 3rd May |
-| COMP Assignment 7/6+7 | Thurs 4th May |
-| ENGR 121 Lab 3 | Fri 5th May  |
-| CYBR 171 Assignment 2 | Mon 8th May  |
-| ENGR 121 Assignment 7| Wed 10th May  |
-| COMP Assignment 8 | Thrus 11th May  |
-| CYBR ENGR Test 2 | Wed 17th May  |
-| COMP Assignment 9/8+9 | Thurs 18th May  |
+| ENGR101 Tutorial 4 | Mon 1st June |
+| ENGR 121 Assignment 6 | Wed 3rd June |
+| COMP Assignment 7/6+7 | Thurs 4th June |
+| ENGR 121 Lab 3 | Fri 5th June  |
+| CYBR 171 Assignment 2 | Mon 8th June  |
+| ENGR 121 Assignment 7| Wed 10th June  |
+| COMP Assignment 8 | Thrus 11th June  |
+| CYBR ENGR Test 2 | Wed 17th June  |
+| COMP Assignment 9/8+9 | Thurs 18th June  |
 
 Note the large gap between the 11th and the 17th. This is where we should be getting a lot of work done and can be treated as both a catch up and a get ahead period for the project. Challenge code may be written in this time. If this happens challenge test case creation will have to be accerated and more minds put towards it.
 
