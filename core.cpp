@@ -1,4 +1,5 @@
 #include "robot.hpp"
+#include "whiteness.hpp"
 double calculateOffset(){
 	/// Returns a double between -1 and 1
 	/// Representing the distance the centre
@@ -13,7 +14,7 @@ double calculateOffset(){
 	int total_cols = cameraView.width;
 	for(int col=0; col<cameraView.height;col++){
 	  int whiteness = get_pixel(cameraView,mid_row,col,3);
-	  if(whiteness>250){//if it isline
+	  if(whiteness>250){//if it is line
 		amount++;
 		offset += mid_col-col;
 	  }
@@ -38,11 +39,21 @@ int main(){
     double vLeft = 5.0;
     double vRight = 5.0;
     double speed = 50.0;
+    double offset = 0;
     takePicture();
     SavePPMFile("i0.ppm",cameraView);
     while(1){
 	  takePicture();
-	  double offset = calculateOffset();
+	  if(isWhiteCentre())
+	  {
+		  offset = calculateOffset();
+	  }
+	  else
+	  {
+		  white left_side = find_white_line(cameraView.height/20, cameraView.height-(cameraView.height/20), cameraView.width/20, cameraView.width/20);
+		  white right_side = find_white_line(cameraView.height/20, cameraView.height-(cameraView.height/20), cameraView.width-(cameraView.width/20), cameraView.width-(cameraView.width/20));
+		  white top_side = find_white_line(cameraView.height/20, cameraView.height/20, cameraView.width/20, cameraView.width-(cameraView.width/20);
+	  }
 	  double * speeds = calculateWheelSpeeds(offset, speed);
 	  vLeft = speeds[0];
 	  vRight = speeds[1];
