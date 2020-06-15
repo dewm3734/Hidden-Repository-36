@@ -140,11 +140,12 @@ Note this is a team timeline and the Invidvidual Report will have to be complete
 
 | Log | Date |
 |----------|------|
-| Log 1 | Sunday 31st May |
-| Log 2 | Tuesday 2nd June |
-| Log 3 | Friday 5th June |
-| Log 4 | Tuesday 9th June |
-| Log 5 | Thursday 11 June |
+| Log 1 | Sunday 31st May | |
+| Log 2 | Tuesday 2nd June | |
+| Log 3 | Friday 5th June | |
+| Log 4 | Tuesday 9th June | |
+| Log 5 | Thursday 11 June | |
+| Log 6 | Monday 15 June | General Update |
 
 ## Test cases - Core
 
