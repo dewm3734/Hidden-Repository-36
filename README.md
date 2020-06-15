@@ -138,8 +138,8 @@ Note this is a team timeline and the Invidvidual Report will have to be complete
 
 ## Project Log - Wiki
 
-| Log | Date |
-|----------|------|
+| Log | Date | |
+|----------|------|------| 
 | Log 1 | Sunday 31st May | |
 | Log 2 | Tuesday 2nd June | |
 | Log 3 | Friday 5th June | |
