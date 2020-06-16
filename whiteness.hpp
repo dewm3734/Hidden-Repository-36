@@ -20,55 +20,57 @@ int isWhite(int pixel)
      //whiteArray[k] = isWhite(get_pixel(cameraView, 50, k, 3);
 //}
 
-struct white
-{
+struct white{
 	int index;
 	int array; // 1 for left side, 2 for right side, 3 for top side
 };
 
+struct wArray{
+	white left;
+	white right;
+	white top;
+	white bottom;
+};
 
-white find_white_line(int row1, int row2, int col1, int col2)
-{
-	int index;
-	int array;
-	int row_array[(row2 - row1)];
-	int col_array[(col1 - col2)];
-	if(col1 == col2)
-	{
-		for(int i = 0; i < (row2 - row1); i++)
-		{
-			row_array[i] = isWhite(get_pixel(cameraView, row1 + i, col1, 3));
-			if(col1 == (cameraView.width / 20))
-			{
-				index = row_array[i];
-				array = 1;
-			}
-			else
-			{
-				index = row_array[i];
-				array = 2;
-			}
+
+wArray find_white_line(){
+	int row1 = cameraView.height/20; int row2 = cameraView.height-row1;
+	int col1 = cameraView.width/20; int col2 = cameraView.width-col1;
+	white left={0,0}; white right={0,0}; white top={0,0}; white bottom={0,0};
+	for(int i = 0; i < row2-row1; i++){
+		if(isWhite(get_pixel(cameraView, row1+i, col1, 3)) == 1){
+			left.index = i;
+			left.array = 1;
+			break;
+		}else if(isWhite(get_pixel(cameraView, row1+i, col2, 3)) == 1){
+			right.index = i;
+			right.array = 2;
+			break;
 		}
 	}
-	else
-	{
-		for(int i = 0; i < (col2 - col1); i++)
-		{
-			col_array[i] = isWhite(get_pixel(cameraView, row1, col1 + i, 3));
-			index = col_array[i];
-			array = 3;
+	for(int j = 0; j < col2-col1; j++){
+		if(isWhite(get_pixel(cameraView, row1, col1+j, 3)) == 1){
+			top.index = j;
+			top.array = 3;
+			break;
+		}else if(isWhite(get_pixel(cameraView, row2, col1+j, 3)) == 1){
+			bottom.index = j;
+			bottom.array = 4;
+			break;
 		}
 	}
-	white _white = {index, array};
+	wArray _white = {left, right, top, bottom};
 	return _white;
 }
-
+double angle(wArray _wArray){
+	
+}
 bool isWhiteCentre()
 {
-	bool isCentre = false
+	bool isCentre = false;
 	for(int i = 0; i < cameraView.width; i++)
 	{
-		if(isWhite(get_pixel(cameraView, cameraView.height/2, i, 3))
+		if(isWhite(get_pixel(cameraView, cameraView.height/2, i, 3)))
 		{
 			isCentre = true;
 		}

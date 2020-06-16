@@ -50,9 +50,8 @@ int main(){
 	  }
 	  else
 	  {
-		  white left_side = find_white_line(cameraView.height/20, cameraView.height-(cameraView.height/20), cameraView.width/20, cameraView.width/20);
-		  white right_side = find_white_line(cameraView.height/20, cameraView.height-(cameraView.height/20), cameraView.width-(cameraView.width/20), cameraView.width-(cameraView.width/20));
-		  white top_side = find_white_line(cameraView.height/20, cameraView.height/20, cameraView.width/20, cameraView.width-(cameraView.width/20);
+		  wArray _wArray = find_white_line();
+		  
 	  }
 	  double * speeds = calculateWheelSpeeds(offset, speed);
 	  vLeft = speeds[0];
