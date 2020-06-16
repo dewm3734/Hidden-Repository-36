@@ -11,3 +11,6 @@ If the white line is located in the top half of the viewpoint the robot should t
 Issues that arise with this test case are:
 that when the white line is in the bottom of the screen and the robot turns towards it, the white line may reach perpendicular to the centre check row but is not in the centre, the robot will need to correct itself at this point.
 When the line is in the top half of the screen and the robot turns until it fills the centre check row, we will have to manually test how far the robot should move forward before turning 90 degrees otherwise the white line will not be in the centre of the screen.
+
+Variables to Bec checked:
+Well, assuming that everything else works, the angles _angles function calculates the angle, in radians, this is most likely what needs to be tested, I didn't change them into degrees because Josh hasn't for the completion parts and I reused his function to calculate speed, with some minor changes.
