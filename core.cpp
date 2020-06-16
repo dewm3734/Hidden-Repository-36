@@ -1,5 +1,6 @@
 #include "robot.hpp"
 #include "whiteness.hpp"
+#include "Speeds.hpp"
 double calculateOffset(){
 	/// Returns a double between -1 and 1
 	/// Representing the distance the centre
@@ -32,6 +33,17 @@ double * calculateWheelSpeeds(double offset,double speed){
 	return speeds;
 	
 }
+Speeds calculateWheelSpeeds2(double speed, double angle){
+	Speeds speeds;
+	
+	std::cout<<" angle="<<angle<<std::endl;
+	speeds.vLeft=speed-(angle)*675/speed/2/(M_PI_2);
+	speeds.vRight=speed+(angle)*675/speed/2/(M_PI_2);
+	speeds.vRight=speed+(angle)*675/speed/2/(M_PI_2);
+
+
+	return speeds;
+}
 int main(){
 	if (initClientRobot() !=0){
 		std::cout<<" Error initializing robot"<<std::endl;
@@ -39,20 +51,32 @@ int main(){
     double vLeft = 5.0;
     double vRight = 5.0;
     double speed = 50.0;
+    Speeds speeds;
     double offset = 0;
     takePicture();
     SavePPMFile("i0.ppm",cameraView);
     while(1){
 	  takePicture();
-	  if(isWhiteCentre())
-	  {
+	  if(isWhiteCentre()){
 		  offset = calculateOffset();
-	  }
-	  else
-	  {
+	  }else{
 		  wArray _wArray = find_white_line();
-		  
+		  angles _angles = angle(_wArray);
+		  if(_angles.LBAngle != 0){
+			  double angle = _angles.LBAngle;
+			  speeds = calculateWheelSpeeds2(speed, angle);
+		  }else if(_angles.LTAngle != 0){
+			  double angle = _angles.LTAngle;
+			  speeds = calculateWheelSpeeds2(speed, angle);
+		  }else if(_angles.RBAngle != 0){
+			  double angle = _angles.RBAngle;
+			  speeds = calculateWheelSpeeds2(speed, angle);
+		  }else if(_angles.RTAngle != 0){
+			  double angle = _angles.RTAngle;
+			  speeds = calculateWheelSpeeds2(speed, angle);
+		  }
 	  }
+	  offset = calculateOffset();
 	  double * speeds = calculateWheelSpeeds(offset, speed);
 	  vLeft = speeds[0];
 	  vRight = speeds[1];
